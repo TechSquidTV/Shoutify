@@ -4,6 +4,12 @@
 
 <p align="center">An open source, self-hosted, and entirely free solution to social media management.</p>
 
+## Status
+
+🚧 **In Development** 🚧
+
+Shoutify is currently _extremly early_ in the development cycle. This app is not yet functional, but is being actively developed. Please "watch" the project and leave a star to get all updates.
+
 ## Description
 
 Shoutify is a social media management tool that allows you to manage and schedule posts across multiple social media platforms. Shoutify was built to empower individual content creators and small businesses to take control and ownership of their social media presence.
