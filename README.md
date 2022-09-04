@@ -8,7 +8,7 @@
 
 🚧 **In Development** 🚧
 
-Shoutify is currently _extremly early_ in the development cycle. This app is not yet functional, but is being actively developed. Please "watch" the project and leave a star to get all updates.
+Shoutify is currently _extremely early_ in the development cycle. This app is not yet functional but is being actively developed. Please "watch" the project and leave a star to get all updates.
 
 ## Description
 
