@@ -3,16 +3,21 @@ import { httpBatchLink } from "@trpc/client/links/httpBatchLink";
 import { loggerLink } from "@trpc/client/links/loggerLink";
 import { withTRPC } from "@trpc/next";
 import { SessionProvider } from "next-auth/react";
-import type { AppType } from "next/dist/shared/lib/utils";
+import { useEffect } from "react";
 import superjson from "superjson";
 import type { AppRouter } from "../server/router";
 import "../styles/globals.css";
+import { AppTypeWithLayout } from "../types/NextExtensions";
 
-const MyApp: AppType = ({
+
+const MyApp: AppTypeWithLayout = ({
   Component,
   pageProps: { session, ...pageProps },
 }) => {
-  return (
+  useEffect(() => {
+    document.body.classList?.remove("loading");
+  }, []);
+  return Component.getLayout(
     <SessionProvider session={session}>
       <Component {...pageProps} />
     </SessionProvider>

@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body,
+body > div:first-child,
+div#__next,
+div#__next > div {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: 'Rubik', Roboto, sans-serif;
+  font-size: 18px;
+}
+
+h1, h2,h3,h4 {
+  @apply my-2
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
