@@ -21,7 +21,7 @@ const navItems: navLink[] = [
   { href: '/analytics', icon: 'LINE_CHART', text: 'Analytics' },
 ];
 
-export const AppNav: React.FC<{}> = () => {
+export const AppNav: React.FC<Record<string, unknown>> = () => {
   const router = useRouter();
   const [isOpen, setIsOpen] = React.useState(true);
   return (

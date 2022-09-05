@@ -5,12 +5,6 @@ import { Icon } from '../components/atoms/Icon';
 import { PageWithLayout } from '../types/NextExtensions';
 import { Button } from '../components/atoms/Button';
 
-type TechnologyCardProps = {
-  name: string;
-  description: string;
-  documentation: string;
-};
-
 const Home: PageWithLayout = () => {
   // const hello = trpc.useQuery(["example.hello", { text: "from tRPC" }]);
   const navItems = [
@@ -58,6 +52,7 @@ const Home: PageWithLayout = () => {
                 layout="intrinsic"
                 width={450}
                 height={400}
+                alt="Shoutify preview screenshot of the app homepage."
               />
             </div>
             <div className="flex-1">
