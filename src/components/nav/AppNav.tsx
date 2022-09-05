@@ -1,10 +1,10 @@
-import React from "react";
-import { useRouter } from "next/router";
-import Link from "next/link";
-import * as Avatar from "@radix-ui/react-avatar";
+import React from 'react';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
+import * as Avatar from '@radix-ui/react-avatar';
 
-import { NavItem } from "./NavItem";
-import { IconName, Icon } from "../atoms/Icon";
+import { NavItem } from './NavItem';
+import { IconName, Icon } from '../atoms/Icon';
 
 type navLink = {
   href: string;
@@ -13,19 +13,19 @@ type navLink = {
 };
 
 const navItems: navLink[] = [
-  { href: "/app", icon: "CHAT_NEW", text: "Create Post" },
-  { href: "/events", icon: "TICKET_ADD", text: "Create Event" },
-  { href: "/mail", icon: "MAIL_ADD", text: "Create Message" },
-  { href: "/queue", icon: "LIST", text: "Queue" },
-  { href: "/drafts", icon: "EDIT", text: "Drafts" },
-  { href: "/analytics", icon: "LINE_CHART", text: "Analytics" },
+  { href: '/app', icon: 'CHAT_NEW', text: 'Create Post' },
+  { href: '/events', icon: 'TICKET_ADD', text: 'Create Event' },
+  { href: '/mail', icon: 'MAIL_ADD', text: 'Create Message' },
+  { href: '/queue', icon: 'LIST', text: 'Queue' },
+  { href: '/drafts', icon: 'EDIT', text: 'Drafts' },
+  { href: '/analytics', icon: 'LINE_CHART', text: 'Analytics' },
 ];
 
 export const AppNav: React.FC<{}> = () => {
   const router = useRouter();
   const [isOpen, setIsOpen] = React.useState(true);
   return (
-    <section className={`p-4 md:max-w-xs bg-gray-800 ${isOpen ? "w-64" : ""}`}>
+    <section className={`p-4 md:max-w-xs bg-gray-800 ${isOpen ? 'w-64' : ''}`}>
       <header className="">
         <div className="flex items-center h-12 py-2">
           <button
@@ -38,7 +38,7 @@ export const AppNav: React.FC<{}> = () => {
           </button>
           <div
             className={`flex flex-1 justify-center font-bold text-2xl my-2 ${
-              isOpen ? "" : "hidden"
+              isOpen ? '' : 'hidden'
             }`}
           >
             <Icon icon="SHOUTIFY_LOGO" p={0} size={24} className="mx-2" />
@@ -47,7 +47,7 @@ export const AppNav: React.FC<{}> = () => {
         </div>
         <div
           className={`flex flex-col justify-center items-center rounded-md bg-gray-900 p-4 mt-1 ${
-            isOpen ? "" : "hidden"
+            isOpen ? '' : 'hidden'
           }`}
         >
           <div className="flex flex-1 flex-col items-center">

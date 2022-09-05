@@ -1,9 +1,9 @@
-import Link from "next/link";
-import Image from "next/image";
-import { ReactNode } from "react";
-import { Icon } from "../components/atoms/Icon";
-import { PageWithLayout } from "../types/NextExtensions";
-import { Button } from "../components/atoms/Button";
+import Link from 'next/link';
+import Image from 'next/image';
+import { ReactNode } from 'react';
+import { Icon } from '../components/atoms/Icon';
+import { PageWithLayout } from '../types/NextExtensions';
+import { Button } from '../components/atoms/Button';
 
 type TechnologyCardProps = {
   name: string;
@@ -15,20 +15,20 @@ const Home: PageWithLayout = () => {
   // const hello = trpc.useQuery(["example.hello", { text: "from tRPC" }]);
   const navItems = [
     {
-      name: "Docs",
-      href: "/docs",
+      name: 'Docs',
+      href: '/docs',
     },
     {
-      name: "Community",
-      href: "/community",
+      name: 'Community',
+      href: '/community',
     },
     {
-      name: "Source",
-      href: "/source",
+      name: 'Source',
+      href: '/source',
     },
     {
-      name: "Sponsor",
-      href: "/sponsor",
+      name: 'Sponsor',
+      href: '/sponsor',
     },
   ];
 

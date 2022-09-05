@@ -1,6 +1,6 @@
-import Head from "next/head";
-import React from "react";
-import { AppNav } from "../components/nav/AppNav";
+import Head from 'next/head';
+import React from 'react';
+import { AppNav } from '../components/nav/AppNav';
 
 interface LayoutProps {
   children: React.ReactNode;

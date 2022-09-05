@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "prettier": "prettier --write .",
     "postinstall": "prisma generate"
   },
   "dependencies": {
@@ -34,7 +35,10 @@
     "autoprefixer": "^10.4.8",
     "eslint": "8.22.0",
     "eslint-config-next": "12.2.5",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.1",
     "postcss": "^8.4.16",
+    "prettier": "2.7.1",
     "prisma": "^4.2.1",
     "tailwindcss": "^3.1.8",
     "typescript": "4.7.4"

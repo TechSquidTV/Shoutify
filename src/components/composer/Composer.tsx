@@ -1,16 +1,16 @@
-import React, { useEffect } from "react";
-import { Button } from "../atoms/Button";
-import { Card } from "../atoms/Card";
-import { DateTime } from "../atoms/DateTime";
-import { Icon } from "../atoms/Icon";
-import { getQuote } from "./inspirationalQuotes";
+import React, { useEffect } from 'react';
+import { Button } from '../atoms/Button';
+import { Card } from '../atoms/Card';
+import { DateTime } from '../atoms/DateTime';
+import { Icon } from '../atoms/Icon';
+import { getQuote } from './inspirationalQuotes';
 export type ComposerProps = {
   className?: string;
 };
 
 export const Composer: React.FC<ComposerProps> = (props: ComposerProps) => {
-  const [message, setMessage] = React.useState("");
-  const [quote, setQuote] = React.useState("");
+  const [message, setMessage] = React.useState('');
+  const [quote, setQuote] = React.useState('');
   useEffect(() => {
     const quote = getQuote();
     setQuote(`${quote.quote} - ${quote.author}`);
@@ -19,11 +19,11 @@ export const Composer: React.FC<ComposerProps> = (props: ComposerProps) => {
   const getPostCountComponent = () => {
     const styles = `text-xs relative -mt-7 mr-6`;
     const charsLeft = 280 - message.length;
-    let colors = charsLeft < 18 ? "text-orange-500" : "text-gray-500";
+    let colors = charsLeft < 18 ? 'text-orange-500' : 'text-gray-500';
     if (charsLeft < 0) {
-      colors = "text-red-500";
+      colors = 'text-red-500';
     }
-    return <span className={[styles, colors].join(" ")}>{charsLeft}</span>;
+    return <span className={[styles, colors].join(' ')}>{charsLeft}</span>;
   };
   return (
     <Card className="flex-col justify-center items-center bg-gray-800 py-2">

@@ -1,6 +1,6 @@
-import Link from "next/link";
-import React, { ButtonHTMLAttributes } from "react";
-import { styleAnimated, styleDeactivated } from "../../styles/styles";
+import Link from 'next/link';
+import React, { ButtonHTMLAttributes } from 'react';
+import { styleAnimated, styleDeactivated } from '../../styles/styles';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   title: string;
@@ -9,13 +9,13 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
   isDeactivated?: boolean;
   px?: number;
-  variant?: Exclude<keyof typeof buttonStyles, "base">;
+  variant?: Exclude<keyof typeof buttonStyles, 'base'>;
 }
 
 const buttonStyles = {
-  base: "text-white rounded-md py-1 inline-flex items-center justify-center hover:bg-gray-700",
-  primary: "bg-blue-600 hover:bg-blue-400",
-  secondary: "bg-gray-800 hover:bg-purple-400",
+  base: 'text-white rounded-md py-1 inline-flex items-center justify-center hover:bg-gray-700',
+  primary: 'bg-blue-600 hover:bg-blue-400',
+  secondary: 'bg-gray-800 hover:bg-purple-400',
 };
 
 export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
@@ -24,11 +24,11 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
   const styles = [
     buttonStyles.base,
     styleAnimated,
-    props.variant ? buttonStyles[props.variant] : "",
+    props.variant ? buttonStyles[props.variant] : '',
     `px-${px}`,
     props.className,
-    isDeactivated ? styleDeactivated : "",
-  ].join(" ");
+    isDeactivated ? styleDeactivated : '',
+  ].join(' ');
   const component = props.href ? (
     <Link href={props.href}>
       <a className={styles} title={props.title}>
@@ -36,7 +36,11 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
       </a>
     </Link>
   ) : (
-    <button className={styles} aria-label={props.ariaLabel || props.title} title={props.title}>
+    <button
+      className={styles}
+      aria-label={props.ariaLabel || props.title}
+      title={props.title}
+    >
       {props.children}
     </button>
   );

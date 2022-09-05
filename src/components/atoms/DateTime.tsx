@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 type DTProps = {
   className?: string;
@@ -25,7 +25,7 @@ export const DateTime: React.FC<DTProps> = (props: DTProps) => {
       value={schedule}
       min={schedule}
       onChange={(e) => setSchedule(dateFormatter(new Date(e.target.value)))}
-      className={["bg-gray-800 rounded-md px-2", props.className].join(" ")}
+      className={['bg-gray-800 rounded-md px-2', props.className].join(' ')}
     />
   );
 };
