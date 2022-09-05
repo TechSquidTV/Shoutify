@@ -7,7 +7,7 @@ import { PageWithLayout } from '../../types/NextExtensions';
 const AppHomePage: PageWithLayout = () => {
   return (
     <div>
-      <Container className='mx-auto'>
+      <Container className="mx-auto">
         <div>
           <Composer />
         </div>

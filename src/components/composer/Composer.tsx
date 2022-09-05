@@ -8,7 +8,7 @@ export type ComposerProps = {
   className?: string;
 };
 
-export const Composer: React.FC<ComposerProps> = (props: ComposerProps) => {
+export const Composer: React.FC<ComposerProps> = () => {
   const [message, setMessage] = React.useState('');
   const [quote, setQuote] = React.useState('');
   useEffect(() => {

@@ -1,10 +1,6 @@
 import { NextComponentType, NextPage } from 'next';
 import { AppInitialProps } from 'next/app';
-import {
-  AppContextType,
-  AppPropsType,
-  NextPageContext,
-} from 'next/dist/shared/lib/utils';
+import { AppContextType, NextPageContext } from 'next/dist/shared/lib/utils';
 import { NextRouter } from 'next/router';
 
 export type AppTypeWithLayout = NextComponentType<
@@ -15,9 +11,9 @@ export type AppTypeWithLayout = NextComponentType<
 
 type AppPropsTypeWithLayout<
   R extends NextRouter = NextRouter,
-  P = {},
+  P = Record<string, unknown>,
 > = AppInitialProps & {
-  Component: NextComponentType<NextPageContext, any, P> & {
+  Component: NextComponentType<NextPageContext, unknown, P> & {
     getLayout: (page: React.ReactNode) => React.ReactNode;
   };
   router: R;
