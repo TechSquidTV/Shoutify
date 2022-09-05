@@ -38,6 +38,7 @@
     "eslint-config-next": "12.2.5",
     "eslint-config-prettier": "^8.5.0",
     "husky": "^8.0.0",
+    "lint-staged": "^13.0.3",
     "postcss": "^8.4.16",
     "prettier": "2.7.1",
     "prisma": "^4.2.1",
@@ -46,5 +47,8 @@
   },
   "ct3aMetadata": {
     "initVersion": "5.9.0"
+  },
+  "lint-staged": {
+    "*.{js,css,md,ts,tsx}": ["eslint --cache --fix", "prettier --write"]
   }
 }
