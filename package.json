@@ -49,6 +49,6 @@
     "initVersion": "5.9.0"
   },
   "lint-staged": {
-    "*.{js,css,md,ts,tsx}": ["eslint --cache --fix", "prettier --write"]
+    "*.{js,css,md,ts,tsx}": ["next lint", "prettier --write"]
   }
 }
