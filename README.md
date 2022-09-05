@@ -8,11 +8,16 @@
 
 🚧 **In Development** 🚧
 
-Shoutify is currently _extremely early_ in the development cycle. This app is not yet functional but is being actively developed. Please "watch" the project and leave a star to get all updates.
+Shoutify is currently _extremely early_ in the development cycle. This app is
+not yet functional but is being actively developed. Please "watch" the project
+and leave a star to get all updates.
 
 ## Description
 
-Shoutify is a social media management tool that allows you to manage and schedule posts across multiple social media platforms. Shoutify was built to empower individual content creators and small businesses to take control and ownership of their social media presence.
+Shoutify is a social media management tool that allows you to manage and
+schedule posts across multiple social media platforms. Shoutify was built to
+empower individual content creators and small businesses to take control and
+ownership of their social media presence.
 
 ## Features
 
@@ -38,9 +43,12 @@ npm run dev
 
 ## Contributing
 
-Shoutify is an open-source project and we welcome contributions from the community. Please read our [contributing guidelines](./CONTRIBUTING.md) to learn how you can get involved.
+Shoutify is an open-source project and we welcome contributions from the
+community. Please read our [contributing guidelines](./CONTRIBUTING.md) to learn
+how you can get involved.
 
-Shoutify is built with [create-t3-app](https://github.com/t3-oss/create-t3-app) and the [T3 stack](https://init.tips/), which utilizes:
+Shoutify is built with [create-t3-app](https://github.com/t3-oss/create-t3-app)
+and the [T3 stack](https://init.tips/), which utilizes:
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [Next.js](https://nextjs.org/)
@@ -50,12 +58,14 @@ Shoutify is built with [create-t3-app](https://github.com/t3-oss/create-t3-app) 
 
 ## Support
 
-Shoutify is an MIT-licenses open-source project. The continued development of this project is thanks to the goodwill of our contributors and generous backers.
+Shoutify is an MIT-licenses open-source project. The continued development of
+this project is thanks to the goodwill of our contributors and generous backers.
 
 At this time, Shoutify is _not accepting donations or backers_.
 
 ### Community
 
-Join the TechSquidTV Discord server to chat with like-minded developers and discuss Shoutify.
+Join the TechSquidTV Discord server to chat with like-minded developers and
+discuss Shoutify.
 
 [![Discord](https://img.shields.io/discord/415249366840901643?color=5865F2&label=Discord&logo=discord&logoColor=white)](https://discord.gg/CTC9DVvYZz)

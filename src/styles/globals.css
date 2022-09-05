@@ -14,8 +14,11 @@ div#__next > div {
   font-size: 18px;
 }
 
-h1, h2,h3,h4 {
-  @apply my-2
+h1,
+h2,
+h3,
+h4 {
+  @apply my-2;
 }
 
 a {
