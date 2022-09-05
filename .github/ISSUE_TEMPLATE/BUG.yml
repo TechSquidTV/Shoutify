@@ -6,22 +6,25 @@ labels: [bug]
 body:
   - type: checkboxes
     attributes:
-      label: "Is there an existing issue for this?"
-      description: "Please search [here](https://github.com/TechSquidTV/Shoutify/issues?q=is%3Aissue) to see if an issue already exists for the bug you encountered"
+      label: 'Is there an existing issue for this?'
+      description:
+        'Please search
+        [here](https://github.com/TechSquidTV/Shoutify/issues?q=is%3Aissue) to
+        see if an issue already exists for the bug you encountered'
       options:
-      - label: "I have searched the existing issues"
-        required: true
+        - label: 'I have searched the existing issues'
+          required: true
 
   - type: textarea
     validations:
       required: true
     attributes:
-      label: "Current behavior"
-      description: "How does the issue manifest?"
+      label: 'Current behavior'
+      description: 'How does the issue manifest?'
 
   - type: textarea
     attributes:
-      label: "Steps to reproduce"
+      label: 'Steps to reproduce'
       description: |
         Detail the steps to take to replicate the issue.
         You may leave this blank if you have covered the issue in the minimum reproduction code above.
@@ -34,8 +37,10 @@ body:
     validations:
       required: true
     attributes:
-      label: "Expected behavior"
-      description: "A clear and concise description of what you expected to happen (or code)"
+      label: 'Expected behavior'
+      description:
+        'A clear and concise description of what you expected to happen (or
+        code)'
 
   - type: markdown
     attributes:
@@ -44,20 +49,20 @@ body:
 
   - type: input
     attributes:
-      label: "Shoutify app version"
+      label: 'Shoutify app version'
       description: |
         Which version of `TechSquidTV/Shoutify` are you using? Check the `package.json` file.
-      placeholder: "0.0.1"
+      placeholder: '0.0.1'
 
   - type: input
     attributes:
-      label: "Node.js version"
-      description: "Which version of Node.js are you using?"
-      placeholder: "v18.8.0"
+      label: 'Node.js version'
+      description: 'Which version of Node.js are you using?'
+      placeholder: 'v18.8.0'
 
   - type: checkboxes
     attributes:
-      label: "In which operating systems have you tested?"
+      label: 'In which operating systems have you tested?'
       options:
         - label: macOS
         - label: Windows
@@ -70,7 +75,7 @@ body:
 
   - type: textarea
     attributes:
-      label: "Other"
+      label: 'Other'
       description: |
         Anything else relevant? eg: Logs, OS version, IDE, package manager, etc.
         **Tip:** You can attach images, recordings or log files by clicking this area to highlight it and then dragging files in.
