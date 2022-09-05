@@ -27,6 +27,15 @@ Shoutify is a social media management tool that allows you to manage and schedul
 <img src="./.github/img/shoutify-app-preview-framed.png" width="240" alt="Nest Logo" /> 
 </p>
 
+## Development
+
+To run the local development server:
+
+```sh
+npm install && \
+npm run dev
+```
+
 ## Contributing
 
 Shoutify is an open-source project and we welcome contributions from the community. Please read our [contributing guidelines](./CONTRIBUTING.md) to learn how you can get involved.
