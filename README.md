@@ -44,7 +44,7 @@ npm run dev
 ## Contributing
 
 Shoutify is an open-source project and we welcome contributions from the
-community. Please read our [contributing guidelines](./CONTRIBUTING.md) to learn
+community. Please read our [contributing guidelines](./.github/CONTRIBUTING.md) to learn
 how you can get involved.
 
 Shoutify is built with [create-t3-app](https://github.com/t3-oss/create-t3-app)
