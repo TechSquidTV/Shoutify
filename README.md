@@ -34,7 +34,14 @@ ownership of their social media presence.
 
 ## Development
 
-To run the local development server:
+#### Prerequisite
+Create your own .env file 
+and example can be found in .env.example 
+
+Log into the [Twitter Developer Portal](https://developer.twitter.com/) and create a new project and follow the wizard for the client ID and Secret. 
+
+
+#### To run the local development server:
 
 ```sh
 npm install && \
