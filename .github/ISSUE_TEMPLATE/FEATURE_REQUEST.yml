@@ -34,7 +34,7 @@ body:
         considered drawbacks.'
   - type: textarea
     validations:
-      required: true
+      required: false
     attributes:
       label: 'Teachability, documentation, adoption, migration strategy.'
       description:
@@ -42,7 +42,7 @@ body:
         write out a version of the docs.'
   - type: textarea
     validations:
-      required: true
+      required: false
     attributes:
       label: 'What is the motivation / use case for changing the behavior?'
       description: 'Describe the motivation or the concrete use case.'
