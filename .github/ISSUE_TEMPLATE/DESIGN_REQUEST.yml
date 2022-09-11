@@ -1,0 +1,37 @@
+name: "\U0001F4A1 Feature Request"
+description:
+  Have an idea for a new feature? Begin by submitting a Feature Request.
+title: 'Request: '
+labels: [design needed]
+
+body:
+  - type: dropdown
+    id: component-type
+    attributes:
+      label: Component Type
+      description: What type of asset is this?
+      options:
+        - Full Page
+        - Component (Molecule)
+        - Component (Atom)
+        - Other
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Component Location
+      description: Where is or where will the component be located?
+      placeholder: 'e.g. /components/atoms/MyComponent.tsx'
+    validations:
+      required: false
+  - type: textarea
+    validations:
+      required: true
+    attributes:
+      label: "What is the component's purpose?"
+      description:
+        Describe in detail the purpose, in terms of features and use-cases.
+  - type: markdown
+    attributes:
+      value: |
+        Additional information / screenshots / mockups
