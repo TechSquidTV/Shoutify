@@ -16,10 +16,10 @@ const MyApp: AppTypeWithLayout = ({
   useEffect(() => {
     document.body.classList?.remove('loading');
   }, []);
-  return Component.getLayout(
+  return (
     <SessionProvider session={session}>
-      <Component {...pageProps} />
-    </SessionProvider>,
+      {Component.getLayout(<Component {...pageProps} />)}
+    </SessionProvider>
   );
 };
 
