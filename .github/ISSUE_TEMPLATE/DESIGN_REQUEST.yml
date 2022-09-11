@@ -30,8 +30,4 @@ body:
     attributes:
       label: "What is the component's purpose?"
       description:
-        Describe in detail the purpose, in terms of features and use-cases.
-  - type: markdown
-    attributes:
-      value: |
-        Additional information / screenshots / mockups
+        Describe in detail the purpose, in terms of features and use-cases
