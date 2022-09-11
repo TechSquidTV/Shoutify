@@ -2,6 +2,7 @@ import { NextComponentType, NextPage } from 'next';
 import { AppInitialProps } from 'next/app';
 import { AppContextType, NextPageContext } from 'next/dist/shared/lib/utils';
 import { NextRouter } from 'next/router';
+import { ReactElement } from 'react';
 
 export type AppTypeWithLayout = NextComponentType<
   AppContextType,
@@ -14,7 +15,7 @@ type AppPropsTypeWithLayout<
   P = Record<string, unknown>,
 > = AppInitialProps & {
   Component: NextComponentType<NextPageContext, unknown, P> & {
-    getLayout: (page: React.ReactNode) => React.ReactNode;
+    getLayout: (page: React.ReactNode) => ReactElement<any, any> | null;
   };
   router: R;
   __N_SSG?: boolean;
@@ -23,5 +24,5 @@ type AppPropsTypeWithLayout<
 };
 
 export type PageWithLayout = NextPage & {
-  getLayout: (page: React.ReactNode) => React.ReactNode;
+  getLayout: (page: React.ReactNode) => ReactElement<any, any> | null;
 };
