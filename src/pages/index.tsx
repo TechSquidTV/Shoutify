@@ -4,9 +4,11 @@ import { ReactNode } from 'react';
 import { Icon } from '../components/atoms/Icon';
 import { PageWithLayout } from '../types/NextExtensions';
 import { Button } from '../components/atoms/Button';
+import { useSession, signIn, signOut } from 'next-auth/react';
 
 const Home: PageWithLayout = () => {
   // const hello = trpc.useQuery(["example.hello", { text: "from tRPC" }]);
+  const { data: session } = useSession();
   const navItems = [
     {
       name: 'Docs',
@@ -42,6 +44,35 @@ const Home: PageWithLayout = () => {
                 </Link>
               );
             })}
+            <li className="text-sm">
+              {!session && (
+                <>
+                  <Button
+                    onClick={() => signIn('twitter')}
+                    title={'sign in'}
+                    variant="primary"
+                    className="mx-2"
+                  >
+                    Sign in
+                  </Button>
+                </>
+              )}
+              {session && (
+                <>
+                  <Button href="/app" title="App" variant="primary">
+                    App
+                  </Button>
+                  <Button
+                    onClick={() => signOut()}
+                    title={'sign in'}
+                    variant="primary"
+                    className="mx-2"
+                  >
+                    Sign out
+                  </Button>
+                </>
+              )}
+            </li>
           </ul>
         </nav>
         <section className="w-full my-4">
