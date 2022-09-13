@@ -10,6 +10,7 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   isDeactivated?: boolean;
   px?: number;
   variant?: Exclude<keyof typeof buttonStyles, 'base'>;
+  onClick?: () => void;
 }
 
 const buttonStyles = {
@@ -40,6 +41,7 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
       className={styles}
       aria-label={props.ariaLabel || props.title}
       title={props.title}
+      onClick={() => (props.onClick ? props.onClick() : null)}
     >
       {props.children}
     </button>

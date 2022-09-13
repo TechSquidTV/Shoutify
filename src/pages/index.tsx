@@ -48,7 +48,9 @@ const Home: PageWithLayout = () => {
               {!session && (
                 <>
                   <Button
-                    onClick={() => signIn('twitter')}
+                    onClick={() => {
+                      signIn('twitter');
+                    }}
                     title={'sign in'}
                     variant="primary"
                     className="mx-2"
