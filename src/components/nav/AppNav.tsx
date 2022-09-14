@@ -5,6 +5,7 @@ import * as Avatar from '@radix-ui/react-avatar';
 
 import { NavItem } from './NavItem';
 import { IconName, Icon } from '../atoms/Icon';
+import { trpc } from '../../utils/trpc';
 
 type navLink = {
   href: string;
@@ -22,6 +23,7 @@ const navItems: navLink[] = [
 ];
 
 export const AppNav: React.FC<Record<string, unknown>> = () => {
+  const userData = trpc.useQuery(['auth.getMeTwitter']);
   const router = useRouter();
   const [isOpen, setIsOpen] = React.useState(true);
   return (
@@ -59,7 +61,9 @@ export const AppNav: React.FC<Record<string, unknown>> = () => {
               />
               <Avatar.AvatarFallback delayMs={600}>SH</Avatar.AvatarFallback>
             </Avatar.Avatar>
-            <span className="block p-2">@username</span>
+            <span className="block p-2">{`@${
+              userData.data?.data.username ?? 'USERNAME'
+            }`}</span>
             <ul className="text-sm text-gray-500">
               <li className="flex flex-row items-center">
                 <Icon icon="TWITTER" />
