@@ -34,7 +34,7 @@ ownership of their social media presence.
 
 ## Development
 
-To setup and install Shoutify for development, please read the [HACKING.md](./HACKING.md) document.
+To setup and install Shoutify for development, please read the [HACKING.md](.github/HACKING.md) document.
 
 ### Contributing
 
