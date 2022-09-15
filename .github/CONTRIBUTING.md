@@ -41,13 +41,7 @@ how large or small. Please begin by taking a look at the open issues and get
 involved in the conversation. We would be happy to assign you to an issue and
 help you get started.
 
-🚧 **Project is in _early_ development, and may not be able to accept all
-contributions at this time.** 🚧
-
-At this time, it may be somewhat difficult for contributors to make code
-contributions. The project is in its infancy and the first MVP is being
-developed. Once the first MVP is released, we will be accepting code
-contributions.
+Get started by reading the [HACKING.md](./HACKING.md) document, and come back here when you're ready to submit.
 
 ### <a name="guidelines"></a>Submission Guidelines
 
