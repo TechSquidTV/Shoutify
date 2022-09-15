@@ -50,6 +50,13 @@ npm run dev
 
 ## Contributing
 
+<a href="https://gitpod.io/github.com/LinuxGamer/Universe">
+  <img
+    src="https://img.shields.io/badge/Contribute%20with-Gitpod-908a85?logo=gitpod"
+    alt="Contribute with Gitpod"
+  />
+</a>
+
 Shoutify is an open-source project and we welcome contributions from the
 community. Please read our [contributing guidelines](./.github/CONTRIBUTING.md) to learn
 how you can get involved.
