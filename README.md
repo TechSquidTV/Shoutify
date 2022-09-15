@@ -50,7 +50,7 @@ npm run dev
 
 ## Contributing
 
-<a href="https://gitpod.io/github.com/LinuxGamer/Universe">
+<a href="https://gitpod.io/github.com/TechSquidTV/Shoutify">
   <img
     src="https://img.shields.io/badge/Contribute%20with-Gitpod-908a85?logo=gitpod"
     alt="Contribute with Gitpod"
