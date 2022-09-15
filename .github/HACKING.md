@@ -29,7 +29,7 @@ npm install
 ### 3. Copy the `.env.example` file to `.env`
 
 ```shell
-mv .env.example .env
+cp .env.example .env
 ```
 
 ### 4. Configure the variables in `.env`
