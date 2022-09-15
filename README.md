@@ -8,7 +8,7 @@
 
 🚧 **In Development** 🚧
 
-Shoutify is currently _extremely early_ in the development cycle. This app is
+Shoutify is currently _early_ in the development cycle. This app is
 not yet functional but is being actively developed. Please "watch" the project
 and leave a star to get all updates.
 
@@ -34,21 +34,9 @@ ownership of their social media presence.
 
 ## Development
 
-#### Prerequisite
-Create your own .env file 
-an example can be found in .env.example 
+To setup and install Shoutify for development, please read the [HACKING.md](.github/HACKING.md) document.
 
-Log into the [Twitter Developer Portal](https://developer.twitter.com/) and create a new project and follow the wizard for the client ID and Secret. 
-
-
-#### To run the local development server:
-
-```sh
-npm install && \
-npm run dev
-```
-
-## Contributing
+### Contributing
 
 Shoutify is an open-source project and we welcome contributions from the
 community. Please read our [contributing guidelines](./.github/CONTRIBUTING.md) to learn
