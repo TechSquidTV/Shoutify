@@ -43,21 +43,7 @@ ownership of their social media presence.
 
 To setup and install Shoutify for development, please read the [HACKING.md](.github/HACKING.md) document.
 
-<<<<<<< Updated upstream
 ### Contributing
-=======
-Log into the [Twitter Developer Portal](https://developer.twitter.com/) and create a new project and follow the wizard for the client ID and Secret. 
-
-
-#### To run the local development server:
-
-```sh
-npm install && \
-npm run dev
-```
-
-## Contributing
->>>>>>> Stashed changes
 
 Shoutify is an open-source project and we welcome contributions from the
 community. Please read our [contributing guidelines](./.github/CONTRIBUTING.md) to learn
