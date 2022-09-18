@@ -2,7 +2,7 @@ import { NextComponentType, NextPage } from 'next';
 import { AppInitialProps } from 'next/app';
 import { AppContextType, NextPageContext } from 'next/dist/shared/lib/utils';
 import { NextRouter } from 'next/router';
-import { ReactElement } from 'react';
+import { ReactElement, ReactNode } from 'react';
 
 export type AppTypeWithLayout = NextComponentType<
   AppContextType,
