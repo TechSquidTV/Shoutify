@@ -25,7 +25,7 @@ export const Button: React.FC<ButtonProps> = (props: ButtonProps) => {
   const styles = [
     buttonStyles.base,
     styleAnimated,
-    props.variant ? buttonStyles[props.variant] : '',
+    props.variant ? buttonStyles[props.variant] : buttonStyles.secondary,
     `px-${px}`,
     props.className,
     isDeactivated ? styleDeactivated : '',

@@ -2,12 +2,12 @@
 import { httpBatchLink } from '@trpc/client/links/httpBatchLink';
 import { loggerLink } from '@trpc/client/links/loggerLink';
 import { withTRPC } from '@trpc/next';
-import { SessionProvider } from 'next-auth/react';
 import { useEffect } from 'react';
 import superjson from 'superjson';
 import type { AppRouter } from '../server/router';
 import '../styles/globals.css';
 import { AppTypeWithLayout } from '../types/NextExtensions';
+import { getSessionWrappedComponent } from '../utils/NextUtils';
 
 const MyApp: AppTypeWithLayout = ({
   Component,
@@ -16,15 +16,7 @@ const MyApp: AppTypeWithLayout = ({
   useEffect(() => {
     document.body.classList?.remove('loading');
   }, []);
-  return (
-    <SessionProvider session={session}>
-      {Component.getLayout ? (
-        Component.getLayout(<Component {...pageProps} />)
-      ) : (
-        <Component {...pageProps} />
-      )}
-    </SessionProvider>
-  );
+  return getSessionWrappedComponent(Component, session, pageProps);
 };
 
 const getBaseUrl = () => {

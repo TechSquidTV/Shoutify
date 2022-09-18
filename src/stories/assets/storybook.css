@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link-row {
+  @apply flex flex-row;
+}
+
+.link-row > div {
+  @apply flex-1 mx-2;
+}
+
+.link-item {
+  @apply flex flex-1 flex-row p-4 rounded-md border-2 border-gray-200 hover:border-gray-400;
+}
+
+.link-item > div {
+  @apply flex flex-col mx-2;
+}

@@ -93,7 +93,7 @@ export const AppNav: React.FC<Record<string, unknown>> = () => {
                 icon={item.icon}
                 text={item.text}
                 isOpen={isOpen}
-                isActive={router.pathname === item.href}
+                isActive={router ? router.pathname === item.href : false}
               />
             );
           })}

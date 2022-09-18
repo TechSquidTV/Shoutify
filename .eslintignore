@@ -1,2 +1,5 @@
 *.md
 *.css
+.storybook/
+*.cjs
+*.config.js
