@@ -9,7 +9,9 @@
     "lint": "next lint",
     "prettier": "prettier --write .",
     "postinstall": "prisma generate",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.4",
@@ -28,15 +30,27 @@
     "zod": "^3.18.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.1",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-interactions": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/builder-webpack5": "^6.5.12",
+    "@storybook/manager-webpack5": "^6.5.12",
+    "@storybook/react": "^6.5.12",
+    "@storybook/testing-library": "^0.0.13",
     "@types/node": "18.0.0",
     "@types/react": "18.0.14",
     "@types/react-dom": "18.0.5",
     "@typescript-eslint/eslint-plugin": "^5.33.0",
     "@typescript-eslint/parser": "^5.33.0",
     "autoprefixer": "^10.4.8",
+    "babel-loader": "^8.2.5",
     "eslint": "8.22.0",
     "eslint-config-next": "12.2.5",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-storybook": "^0.6.4",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
     "postcss": "^8.4.16",
@@ -48,7 +62,13 @@
   "ct3aMetadata": {
     "initVersion": "5.9.0"
   },
+  "resolutions": {
+    "webpack": "^5"
+},
   "lint-staged": {
-    "*.{js,css,md,ts,tsx}": ["eslint --fix", "prettier --write"]
+    "*.{js,css,md,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }

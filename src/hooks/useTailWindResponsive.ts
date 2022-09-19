@@ -1,10 +1,12 @@
+import { useEffect, useState } from 'react';
 import resolveConfig from 'tailwindcss/resolveConfig';
 import tailwindConfig from '../../tailwind.config.cjs';
-import { useEffect, useState } from 'react';
+
 type defaultScreenSize = 'sm' | 'md' | 'lg' | 'xl' | '2xl';
 type Screens = {
   [key in defaultScreenSize]: string;
 };
+
 const tailwindConfigResolved = resolveConfig(tailwindConfig);
 const screenSizes = tailwindConfigResolved.theme?.screens as unknown as Screens;
 
@@ -13,6 +15,7 @@ export function useTailWindResponsive(query: defaultScreenSize): boolean {
   const inputQueryMapped = screenSizes[query];
   const inputMediaQuery = `(min-width: ${inputQueryMapped})`;
   const [matches, setMatches] = useState<boolean>(false);
+
   useEffect(() => {
     function handleChange(e: MediaQueryListEvent) {
       setMatches(e.matches);
@@ -26,5 +29,6 @@ export function useTailWindResponsive(query: defaultScreenSize): boolean {
       matchQueryList.removeEventListener('change', handleChange);
     };
   }, [query]);
+
   return matches;
 }
