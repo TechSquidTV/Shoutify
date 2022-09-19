@@ -16,6 +16,10 @@ export class AppLayout extends React.Component<LayoutProps> {
         <Head>
           <title>Shoutify</title>
           <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0,  minimum-scale=1.0"
+          />
+          <meta
             name="description"
             content="Schedule and manage social media posts"
           />
