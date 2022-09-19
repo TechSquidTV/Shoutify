@@ -3,7 +3,7 @@
 Please check if your PR fulfills the following requirements:
 
 - [ ] The commit message follows our contributor
-      [guidelines](https://github.com/TechSquidTV/Shoutify/blob/main/.github/CONTRIBUTING.md).
+      [guidelines](/.github/CONTRIBUTING.md).
 - [ ] Tests for the changes have been added (for bug fixes / features)
 - [ ] Documentation has been added or updated where needed.
 
@@ -25,13 +25,16 @@ What kind of change does this PR introduce?
 
 ## What issues are resolved by this PR?
 
-<!-- All Pull Requests should be a response to an existing issue. Please ensure you have created an issue before submitting a PR. -->
+<!-- All Pull Requests should be a response to an existing issue. Please ensure you have created an issue before submitting a PR and use this format link issue numbers: Fixes #123 -->
 
-- #[00]
+- Fixes #[00]
 
 ## Describe the new behavior
 
-<!-- Describe the new behavior introduced by this change. Include an examples or samples needed, such as screenshots or code snippets. -->
+<!--
+Please do not leave this blank
+Describe the new behavior introduced by this change. Include an examples or samples needed, such as screenshots or code snippets.
+-->
 
 > Description
 
