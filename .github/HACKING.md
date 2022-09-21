@@ -56,7 +56,7 @@ npm run dev
 
 Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-### 8. Login with Twitter
+### 8. Log in with Twitter
 
 Click the "Sign in" button in the top right corner. After authenticating with twitter, you should be redirected back to the Shoutify app, and the "Sign in" button should now say "Sign out" and there should be an additional "App" button.
 
