@@ -40,6 +40,13 @@ cp .env.example .env
 | TWITTER_CLIENT_ID | < OAuth 2.0 Client ID > |
 | TWITTER_CLIENT_SECRET  | < OAuth 2.0 Client Secret > |
 
+> Required step: You need to get your own `TWITTER_CLIENT_ID` AND
+> `TWITTER_CLIENT_SECRET` from
+> [https://developer.twitter.com](https://developer.twitter.com) for Shoutify to
+> work.
+>
+> Be mindful that this may take some time for Twitter to review your request.
+
 ### 5. Initialize the database
 
 ```shell
