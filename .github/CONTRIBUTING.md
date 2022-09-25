@@ -109,11 +109,11 @@ After the issue has been created, follow these steps to create a Pull Request.
 1. Fork the [TechSquidTV/Shoutify](https://github.com/TechSquidTV/Shoutify)
    repo.
 1. Clone your newly forked repository to your local machine.
-1. Create a new branch for your changes: `git checkout -b fix_my_issue main`
+1. Create a new branch for your changes: `git checkout -b fix/my-issue main`
 1. Run `npm install`
 1. Implement your change with appropriate test coverage.
 1. Utilize our [commit message conventions](commit).
-1. Push all changes back to GitHub `git push origin fix_my_issue`
+1. Push all changes back to GitHub `git push origin fix/my-issue`
 1. In GitHub, send a Pull Request to `shoutify:main`
 
 Thank you for your contribution!
@@ -127,7 +127,7 @@ the changes from the main (upstream) repository:
   local shell as follows:
 
   ```shell
-  git push origin --delete fix_my_issue
+  git push origin --delete fix/my-issue
   ```
 
 - Check out the main branch:
@@ -139,7 +139,7 @@ the changes from the main (upstream) repository:
 - Delete the local branch:
 
   ```shell
-  git branch -D fix_my_issue
+  git branch -D fix/my-issue
   ```
 
 - Update your main with the latest upstream version:
