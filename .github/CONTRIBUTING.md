@@ -113,7 +113,6 @@ After the issue has been created, follow these steps to create a Pull Request.
 1. Run `npm install`
 1. Implement your change with appropriate test coverage.
 1. Utilize our [commit message conventions](commit).
-1. Run tests, linters, and formatters locally, with: `npm run prep`
 1. Push all changes back to GitHub `git push origin fix_my_issue`
 1. In GitHub, send a Pull Request to `shoutify:main`
 
