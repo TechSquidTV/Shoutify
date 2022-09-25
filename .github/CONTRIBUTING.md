@@ -10,6 +10,7 @@ this document in order to make effective contributions.
 - [Contributing](#contribute)
   - [Submission Guidelines](#guidelines)
   - [Release Process](#release)
+  - [FAQ](#FAQ)
 
 ## <a name="question"></a>Have a Question?
 
@@ -163,3 +164,11 @@ When it is time to release a new version, follow the following steps.
    [create a new Release](https://github.com/CircleCI-Public/circleci-config-sdk-ts/releases/new)
    with the `main` branch as the target and specify the version number.
 1. Include the automatically generated release notes in the release description.
+
+#### <a name="FAQ"></a>FAQ
+
+##### Q. Why does my commit fail?
+
+**A.** This project makes use of git commit hooks to automate pre-checking commits by linting, testing, and running prettier. If you would like to bypass these checks locally temporarily to save progress, ensure to add the `--no-verify` flag to your commit message.
+
+**A.** Want the hooks enabled but they are still failing? Check to ensure you are using the right version of NodeJS but running `nvm use` in the directory.
