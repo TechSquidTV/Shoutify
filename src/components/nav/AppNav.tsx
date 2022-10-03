@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import * as Avatar from '@radix-ui/react-avatar';
 
 import { NavItem } from './NavItem';
 import { IconName, Icon } from '../atoms/Icon';
+import { useTailWindResponsive } from '../../hooks/useTailWindResponsive';
 
 type navLink = {
   href: string;
@@ -24,6 +25,12 @@ const navItems: navLink[] = [
 export const AppNav: React.FC<Record<string, unknown>> = () => {
   const router = useRouter();
   const [isOpen, setIsOpen] = React.useState(true);
+  const match = useTailWindResponsive('md');
+
+  useEffect(() => {
+    !match ? setIsOpen(false) : setIsOpen(true);
+  }, [match]);
+
   return (
     <section className={`p-4 md:max-w-xs bg-gray-800 ${isOpen ? 'w-64' : ''}`}>
       <header className="">
