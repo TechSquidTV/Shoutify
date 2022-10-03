@@ -4,6 +4,10 @@
 
 <p align="center">An open source, self-hosted, and entirely free solution to social media management.</p>
 
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://github.com/TechSquidTV/Shoutify/blob/main/LICENSE)
+
+---
+
 ## Status
 
 🚧 **In Development** 🚧
