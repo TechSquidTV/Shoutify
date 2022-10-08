@@ -1,6 +1,6 @@
 import type { ComponentMeta } from '@storybook/react';
 
-import AppNav from '../../components/nav/AppNav';
+import AppNav from '../../components/nav/DynamicNav';
 import { getSessionWrappedComponent } from '../../utils/NextUtils';
 
 export default {

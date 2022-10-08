@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
-import { AppNav } from '../components/nav/AppNav';
+import { DynamicNav } from '../components/nav/DynamicNav';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -25,8 +25,8 @@ export class AppLayout extends React.Component<LayoutProps> {
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <div className="flex h-full">
-          <AppNav />
+        <div className="flex h-full flex-col sm:flex-row">
+          <DynamicNav />
           <main className="flex-1 px-4">{this.props.children}</main>
         </div>
       </>

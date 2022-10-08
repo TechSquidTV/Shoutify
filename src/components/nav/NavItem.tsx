@@ -22,7 +22,7 @@ export class NavItem extends React.Component<NavItemProps> {
       >
         <Link href={this.props.href}>
           <a className="flex items-center">
-            <Icon icon={this.props.icon} />
+            <Icon icon={this.props.icon} className="p-2" />
             <span
               className={`flex-1 ml-2 ${this.props.isOpen ? '' : 'hidden'}`}
             >
