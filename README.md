@@ -12,9 +12,9 @@
 
 🚧 **In Development** 🚧
 
-Shoutify is currently _early_ in the development cycle. This app is
-not yet functional but is being actively developed. Please "watch" the project
-and leave a star to get all updates.
+Shoutify is currently _early_ in the development cycle. This app is not yet
+functional but is being actively developed. Please "watch" the project and leave
+a star to get all updates.
 
 ## Description
 
@@ -38,13 +38,14 @@ ownership of their social media presence.
 
 ## Development
 
-To setup and install Shoutify for development, please read the [HACKING.md](.github/HACKING.md) document.
+To setup and install Shoutify for development, please read the
+[HACKING.md](.github/HACKING.md) document.
 
 ### Contributing
 
 Shoutify is an open-source project and we welcome contributions from the
-community. Please read our [contributing guidelines](./.github/CONTRIBUTING.md) to learn
-how you can get involved.
+community. Please read our [contributing guidelines](./.github/CONTRIBUTING.md)
+to learn how you can get involved.
 
 Shoutify is built with [create-t3-app](https://github.com/t3-oss/create-t3-app)
 and the [T3 stack](https://init.tips/), which utilizes:
@@ -57,8 +58,9 @@ and the [T3 stack](https://init.tips/), which utilizes:
 
 ## Support
 
-Shoutify is an MIT-licenses open-source project. The continued development of
-this project is thanks to the goodwill of our contributors and generous backers.
+Shoutify is an Apache-2.0 license open-source project. The continued development
+of this project is thanks to the goodwill of our contributors and generous
+backers.
 
 At this time, Shoutify is _not accepting donations or backers_.
 
